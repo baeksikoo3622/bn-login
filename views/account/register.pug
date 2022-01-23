@@ -4,14 +4,13 @@ block title
   title BN - Login
 
 block content
-  .account(style="")
+  .account
     p.titleMsg 회원가입
     p.titleMsg_En Login
     br
     br
     br
-    br
-    form.form(action="/account/login_process", method="post", onsubmit="register()")
+    form.form(action="/account/register_process", method="post")
       .inputarea
         p 
           input.userid(type="text", name="userid", id="userid", required, autocomplete="off")
@@ -23,12 +22,12 @@ block content
       .inputarea
         p 
           input.password(type="password", name="password", id="password", required, autocomplete="off")
-          label.password_l(for="password") PASSWORD
+          label.password_l(for="password") PASSWORD (7자 이상)
       .inputarea
         p 
           input.password_check(type="password", name="password_check", id="password_check", required, autocomplete="off")
           label.password_check_l(for="password_check") PASSWORD CHECK
       .btnarea
-        input.btn(type="submit", value="회원가입")
+        input.btn1(type="submit", value="회원가입")
       .caption
         a(href="account/forget/password") Forget Password?

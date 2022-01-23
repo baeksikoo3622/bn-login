@@ -4,12 +4,23 @@ block title
   title BN - Login
 
 block content
-  .main2(style="text-align: center;")
+  .account
     p.titleMsg 로그인
     p.titleMsg_En Login
     br
     br
     br
     br
-    form(action="/account/login_process", method="post", onsubmit="login()")
-
+    form.form(action="/account/login_process", method="post")
+      .inputarea
+        p 
+          input.userid(type="text", name="userid", id="userid", required, autocomplete="off")
+          label.userid_l(for="userid") USER ID
+      .inputarea
+        p 
+          input.password(type="password", name="password", id="password", required, autocomplete="off")
+          label.password_l(for="password") PASSWORD
+      .btnarea
+        input.btn2(type="submit", value="회원가입")
+      .caption
+        a(href="account/forget/password") Forget Password?
