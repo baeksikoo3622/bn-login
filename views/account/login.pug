@@ -1,0 +1,15 @@
+extends layout
+
+block title
+  title BN - Login
+
+block content
+  .main2(style="text-align: center;")
+    p.titleMsg 로그인
+    p.titleMsg_En Login
+    br
+    br
+    br
+    br
+    form(action="/account/login_process", method="post", onsubmit="login()")
+

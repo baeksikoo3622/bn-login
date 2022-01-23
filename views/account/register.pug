@@ -1,0 +1,34 @@
+extends layout
+
+block title
+  title BN - Login
+
+block content
+  .account(style="")
+    p.titleMsg 회원가입
+    p.titleMsg_En Login
+    br
+    br
+    br
+    br
+    form.form(action="/account/login_process", method="post", onsubmit="register()")
+      .inputarea
+        p 
+          input.userid(type="text", name="userid", id="userid", required, autocomplete="off")
+          label.userid_l(for="userid") USER ID
+      .inputarea
+        p 
+          input.username(type="text", name="username", id="username", required, autocomplete="off")
+          label.username_l(for="username") USERNAME
+      .inputarea
+        p 
+          input.password(type="password", name="password", id="password", required, autocomplete="off")
+          label.password_l(for="password") PASSWORD
+      .inputarea
+        p 
+          input.password_check(type="password", name="password_check", id="password_check", required, autocomplete="off")
+          label.password_check_l(for="password_check") PASSWORD CHECK
+      .btnarea
+        input.btn(type="submit", value="회원가입")
+      .caption
+        a(href="account/forget/password") Forget Password?
