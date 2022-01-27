@@ -4,7 +4,8 @@
   "private": true,
   "homepage": "https://baeksikoo3622.github.io/bn-login",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "deploy": "npm run start&&gh-pages -d start"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
