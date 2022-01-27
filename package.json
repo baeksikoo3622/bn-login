@@ -2,6 +2,7 @@
   "name": "homepage",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://baeksikoo3622.github.io/bn-login",
   "scripts": {
     "start": "nodemon ./bin/www"
   },
@@ -10,8 +11,10 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "express-session": "^1.17.2",
+    "gh-pages": "^3.2.3",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+    "netlify-lambda": "^2.0.15",
     "pug": "2.0.0-beta11"
   }
 }
