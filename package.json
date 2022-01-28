@@ -2,10 +2,8 @@
   "name": "homepage",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://baeksikoo3622.github.io/bn-login",
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "build": "browserify ./bin/www -o bundle.js"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -14,11 +12,7 @@
     "express-session": "^1.17.2",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "netlify-lambda": "^2.0.15",
     "nodemon": "^2.0.15",
     "pug": "2.0.0-beta11"
-  },
-  "devDependencies": {
-    "browserify": "^17.0.0"
   }
 }
