@@ -4,7 +4,8 @@
   "private": true,
   "homepage": "https://baeksikoo3622.github.io/bn-login",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "build": "browserify ./bin/www -o bundle.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,5 +17,8 @@
     "netlify-lambda": "^2.0.15",
     "nodemon": "^2.0.15",
     "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
   }
 }
